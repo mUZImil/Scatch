@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#e4f2ff] min-h-screen flex justify-center items-center py-12">
+  <div class="flex flex-col gap-12">
+
+     <h1 class="text-[#00ffff] text-[36px] font-semibold text-center">Admin</h1>
+
+     <form action="/admin" method="post" class="flex flex-col gap-8 border border-[gray] rounded p-5">
+      <h3 class="text-[22px] text-[black] font-semibold text-center">Add product</h3>
+       <input type="text" class="p-3 bg-[white] border border-[gray] rounded" placeholder="product name" name="name"/>
+       <input type="text" class="p-3 bg-[white] border border-[gray] rounded" placeholder="image" name="img"/>
+       <input type="text" class="p-3 bg-[white] border border-[gray] rounded" placeholder="price" name="price"/>
+       <input type="text" class="p-3 bg-[white] border border-[gray] rounded" placeholder="color" name="bg"/>
+       <input type="text" class="p-3 bg-[white] border border-[gray] rounded" placeholder="quantity" name="quantity"/>
+       <button class="px-4 py-2 bg-[#ffa600] rounded text-white">Add product</button>
+       </form>
+  </div>
+</body>
+</html>
