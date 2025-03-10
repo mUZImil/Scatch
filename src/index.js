@@ -17,6 +17,10 @@ app.use(cors({
  credentials: true
 }))
 
+app.get('/', (req, res)=>{
+ res.send('you are at the home page')
+})
+
 app.get('/form/:pref', (req, res) => {
  res.render(__dirname + '/views/from.ejs', { pageName: req.params.pref });
 })
